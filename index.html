@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Email List</title>
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js" defer></script>
+    <!-- my js -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Mail generator</h1>
+        <button @click="getMail">Click for generate</button>
+        <ul v-for="mail in arrMail">
+            <li>{{mail}}</li>
+        </ul>
+    </div>    
+</body>
+</html>

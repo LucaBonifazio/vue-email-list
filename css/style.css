@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+}
+
+button{
+    background-color: aqua;
+    color: black;
+    border-radius: 10rem;
+    padding: .5rem;
+}
