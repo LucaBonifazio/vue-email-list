@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Email List</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
     <!-- my style -->
     <link rel="stylesheet" href="css/style.css">
     <!-- axios -->
@@ -15,9 +20,10 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div id="app">
+    <div id="app" v-cloak>
         <h1>Mail generator</h1>
-        <button @click="getMail">Click for generate</button>
+        <button class="generate_btn" @click="getMail">Click for generate</button>
+        <button class="delete_btn" @click="deleteMail">Click for delete</button>
         <ul v-for="mail in arrMail">
             <li>{{mail}}</li>
         </ul>
