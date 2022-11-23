@@ -24,8 +24,8 @@
         <h1>Mail generator</h1>
         <button class="generate_btn" @click="getMail">Click for generate</button>
         <button class="delete_btn" @click="deleteMail">Click for delete</button>
-        <ul v-for="mail in arrMail">
-            <li>{{mail}}</li>
+        <ul>
+            <li v-for="mail in arrMail">{{mail}}</li>
         </ul>
     </div>    
 </body>
