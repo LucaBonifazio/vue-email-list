@@ -15,4 +15,7 @@ new Vue({
             this.arrMail = [];
         }
 	},
+    created(){
+        this.getMail();
+    }
 });
